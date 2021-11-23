@@ -5,7 +5,7 @@
 ## Deploy to Heroku Fast 👇
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/infotechIT/spotify_downloader_telegram__bot/tree/Heroku)
 
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&label=MyChannel)](https://t.me/nimiology)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&label=MyChannel)](https://t.me/infotechIT)
 
 
 
