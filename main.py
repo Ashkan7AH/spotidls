@@ -59,7 +59,7 @@ def START(msg, chat_id):
 
     elif msg == "/start":
         bot.sendMessage(chat_id,
-                        "Hi \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \nSpotify Downloader Database: @DLdatabase")
+                        "Hi \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \nspotify downloader database: @DLdatabase")
 
 
     elif msg == "/album":
