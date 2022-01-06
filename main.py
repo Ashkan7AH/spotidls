@@ -4,8 +4,8 @@ import spotify
 import requests
 import threading
 
-token = '2068084647:AAEfeEbhgdcvwEjKNA3SV9fcJXb52rVDGVQ'
-bot = telepot.Bot(2068084647:AAEfeEbhgdcvwEjKNA3SV9fcJXb52rVDGVQ)
+token = '5093654421:AAHtO6C6DOFsCbV67jJ3wf1FgTa7uC1z4EY'
+bot = telepot.Bot()
 
 sort = {}
 
@@ -59,7 +59,7 @@ def START(msg, chat_id):
 
     elif msg == "/start":
         bot.sendMessage(chat_id,
-                        "Hi \nsend me spotify link and I'll give you music\nor use /single or /album or /artist")
+                        "Hi \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \nSpotify Downloader Database: @DLdatabase")
 
 
     elif msg == "/album":
