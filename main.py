@@ -59,21 +59,21 @@ def START(msg, chat_id):
 
     elif msg == "/start":
         bot.sendMessage(chat_id,
-                        "Hello \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \nspotify downloader database: @DLdatabase")
+                        "Hello \nsend me spotify link and I'll give you music\nor use /single or /album or /artist")
 
 
     elif msg == "/album":
         sort[chat_id] = 'album'
         bot.sendMessage(chat_id,
-                        'send name and name of artist like this: \nName album\nor for better search use this:\nName album - Name artist \nSpotify Downloader Database: @DLdatabase')
+                        'send name and name of artist like this: \nName album\nor for better search use this:\nName album - Name artist')
 
     elif msg == '/single':
         sort[chat_id] = 'single'
         bot.sendMessage(chat_id,
-                        'send name and name of artist like this: \nName song\nor for better search use this:\nName song - Name artist \nSpotify Downloader Database: @DLdatabase')
+                        'send name and name of artist like this: \nName song\nor for better search use this:\nName song - Name artist')
     elif msg == '/artist':
         sort[chat_id] = 'artist'
-        bot.sendMessage(chat_id, 'send name and name of artist like this: \nName artist \nSpotify Downloader Database: @DLdatabase')
+        bot.sendMessage(chat_id, 'send name and name of artist like this: \nName artist')
 
     else:
         if chat_id in sort:
