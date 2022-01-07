@@ -80,7 +80,7 @@ def START(msg,chat_id):
 
     elif msg == "/start":
         bot.sendMessage(chat_id,
-                        "Hi \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \n\n🆔️ @Spotifydlsbot\n⚡Database Channel: @DLdatabase")
+                        "Hi \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \n\n〰️〰️〰️〰️〰️〰️〰️〰️〰️\n🆔️ @Spotifydlsbot\n⚡ Database Channel: @DLdatabase")
 
     elif msg == "/album":
         sort[chat_id]='album'
