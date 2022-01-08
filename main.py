@@ -21,11 +21,11 @@ def txtfinder(txt):
     return txt
 
 def cantfind(chat_id):
-    
+    bot.sendSticker(chat_id, 'CAACAgQAAxkBAAIBE2BLNclvKLFHC-grzNdOEXKGl6cLAALzAAMSp2oDSBk1Yo7wCGUeBA')    
     bot.sendMessage(chat_id, "❌ can't find it, Give me the full name of the song with the name of the singer!")
 
 def cantfindone(chat_id):
-    
+    bot.sendSticker(chat_id, 'CAACAgQAAxkBAAIBE2BLNclvKLFHC-grzNdOEXKGl6cLAALzAAMSp2oDSBk1Yo7wCGUeBA')    
     bot.sendMessage(chat_id, "❌ can't download one of them, Try again in a few minutes")
 
 def downloader(link,chat_id,type):
@@ -69,7 +69,7 @@ def START(msg,chat_id):
             SONGDOWNLOADER(msg, chat_id)
         except:
             bot.sendSticker(chat_id,
-                            
+                            'CAACAgQAAxkBAAIFSWBF_m3GHUtZJxQzobvD_iWxYVClAAJuAgACh4hSOhXuVi2-7-xQHgQ')                            
             bot.sendMessage(chat_id, "❌ can't download one of them, Try again in a few minutes")
 
     elif msg[:33] == 'https://open.spotify.com/playlist':
@@ -82,6 +82,7 @@ def START(msg,chat_id):
         bot.sendMessage(chat_id,
                         "Hi, \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \n\n⚡ Database Channel: @DLdatabase")
 
+        
     elif msg == "/album":
         sort[chat_id]='album'
         bot.sendMessage(chat_id, 'send name and name of artist like this: \nName album\nor for better search use this:\nName album - Name artist')
