@@ -21,12 +21,10 @@ def txtfinder(txt):
     return txt
 
 def cantfind(chat_id):
-    bot.sendSticker(chat_id, 'CAACAgQAAxkBAAIBE2BLNclvKLFHC-grzNdOEXKGl6cLAALzAAMSp2oDSBk1Yo7wCGUeBA')
-    bot.sendMessage(chat_id, "can't find it")
+    bot.sendMessage(chat_id, "❌ can't find it, Give me the full name of the song with the name of the singer!")
 
 def cantfindone(chat_id):
-    bot.sendSticker(chat_id, 'CAACAgQAAxkBAAIFSWBF_m3GHUtZJxQzobvD_iWxYVClAAJuAgACh4hSOhXuVi2-7-xQHgQ')
-    bot.sendMessage(chat_id, "can't download one of them")
+    bot.sendMessage(chat_id, "❌ can't download one of them, Try again in a few minutes")
 
 def downloader(link,chat_id,type):
     PLAYLIST = False
@@ -69,8 +67,7 @@ def START(msg,chat_id):
             SONGDOWNLOADER(msg, chat_id)
         except:
             bot.sendSticker(chat_id,
-                            'CAACAgQAAxkBAAIFSWBF_m3GHUtZJxQzobvD_iWxYVClAAJuAgACh4hSOhXuVi2-7-xQHgQ')
-            bot.sendMessage(chat_id, "can't download music")
+            bot.sendMessage(chat_id, "❌ can't download one of them, Try again in a few minutes")
 
     elif msg[:33] == 'https://open.spotify.com/playlist':
         downloader(msg,chat_id,'PL')
@@ -114,8 +111,7 @@ def START(msg,chat_id):
                 except:
                     cantfind(chat_id)
         except:
-            bot.sendSticker(chat_id, 'CAACAgQAAxkBAAIBFGBLNcpfFcTLxnn5lR20ZbE2EJbrAAJRAQACEqdqA2XZDc7OSUrIHgQ')
-            bot.sendMessage(chat_id,'send me link or use /single or /album or /artist')
+            bot.sendMessage(chat_id,'✔️ send me link or use /single or /album or /artist')
 
 
 print('Listening ...')
