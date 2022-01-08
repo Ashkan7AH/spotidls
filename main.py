@@ -21,9 +21,11 @@ def txtfinder(txt):
     return txt
 
 def cantfind(chat_id):
+    
     bot.sendMessage(chat_id, "❌ can't find it, Give me the full name of the song with the name of the singer!")
 
 def cantfindone(chat_id):
+    
     bot.sendMessage(chat_id, "❌ can't download one of them, Try again in a few minutes")
 
 def downloader(link,chat_id,type):
@@ -67,6 +69,7 @@ def START(msg,chat_id):
             SONGDOWNLOADER(msg, chat_id)
         except:
             bot.sendSticker(chat_id,
+                            
             bot.sendMessage(chat_id, "❌ can't download one of them, Try again in a few minutes")
 
     elif msg[:33] == 'https://open.spotify.com/playlist':
@@ -111,6 +114,7 @@ def START(msg,chat_id):
                 except:
                     cantfind(chat_id)
         except:
+                            
             bot.sendMessage(chat_id,'✔️ send me link or use /single or /album or /artist')
 
 
