@@ -80,19 +80,19 @@ def START(msg,chat_id):
 
     elif msg == "/start":
         bot.sendMessage(chat_id,
-                        "Hi, \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \n\n🚨Join the channel to keep the robot free🚨\n⚡ Channel: @DLdatabase")
+                        "Hi, \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \n\n🚨Join the channel to keep the robot free🚨\n⚡Channel: @DLdatabase")
 
         
     elif msg == "/album":
         sort[chat_id]='album'
-        bot.sendMessage(chat_id, 'send name and name of artist like this: \nName album\nor for better search use this:\nName album - Name artist \n\n🚨Join the channel to keep the robot free🚨\n⚡ Channel: @DLdatabase')
+        bot.sendMessage(chat_id, 'send name and name of artist like this: \nName album\nor for better search use this:\nName album - Name artist \n\n🚨Join the channel to keep the robot free🚨\n⚡Channel: @DLdatabase')
 
     elif msg == '/single':
         sort[chat_id]='single'
-        bot.sendMessage(chat_id,'send name and name of artist like this: \nName song\nor for better search use this:\nName song - Name artist \n\n🚨Join the channel to keep the robot free🚨\n⚡ Channel: @DLdatabase')
+        bot.sendMessage(chat_id,'send name and name of artist like this: \nName song\nor for better search use this:\nName song - Name artist \n\n🚨Join the channel to keep the robot free🚨\n⚡Channel: @DLdatabase')
     elif msg == '/artist':
         sort[chat_id]='artist'
-        bot.sendMessage(chat_id,'send name and name of artist like this: \nName artist \n\n🚨Join the channel to keep the robot free🚨\n⚡ Channel: @DLdatabase')
+        bot.sendMessage(chat_id,'send name and name of artist like this: \nName artist \n\n🚨Join the channel to keep the robot free🚨\n⚡Channel: @DLdatabase')
 
     else:
         try:
