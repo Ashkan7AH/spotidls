@@ -80,19 +80,19 @@ def START(msg,chat_id):
 
     elif msg == "/start":
         bot.sendMessage(chat_id,
-                        "Hi, \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \n\n⚡ Database Channel: @DLdatabase")
+                        "Hi, \nsend me spotify link and I'll give you music\nor use /single or /album or /artist \n\n🙏 Please join the channel to support me 🙏\n⚡ Database Channel: @DLdatabase")
 
         
     elif msg == "/album":
         sort[chat_id]='album'
-        bot.sendMessage(chat_id, 'send name and name of artist like this: \nName album\nor for better search use this:\nName album - Name artist')
+        bot.sendMessage(chat_id, 'send name and name of artist like this: \nName album\nor for better search use this:\nName album - Name artist \n\n🙏 Please join the channel to support me 🙏\n⚡ Database Channel: @DLdatabase')
 
     elif msg == '/single':
         sort[chat_id]='single'
-        bot.sendMessage(chat_id,'send name and name of artist like this: \nName song\nor for better search use this:\nName song - Name artist')
+        bot.sendMessage(chat_id,'send name and name of artist like this: \nName song\nor for better search use this:\nName song - Name artist \n\n🙏 Please join the channel to support me 🙏\n⚡ Database Channel: @DLdatabase')
     elif msg == '/artist':
         sort[chat_id]='artist'
-        bot.sendMessage(chat_id,'send name and name of artist like this: \nName artist')
+        bot.sendMessage(chat_id,'send name and name of artist like this: \nName artist \n\n🙏 Please join the channel to support me 🙏\n⚡ Database Channel: @DLdatabase')
 
     else:
         try:
