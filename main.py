@@ -4,7 +4,7 @@ import spotify
 import requests
 import threading
 
-token = '5093654421:AAHtO6C6DOFsCbV67jJ3wf1FgTa7uC1z4EY'
+token = '2125782775:AAEmmbwm0lT78ZIW8yxuJn2C0jFIDbt3vtg'
 bot = telepot.Bot()
 
 sort = {}
